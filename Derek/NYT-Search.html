@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ='en'>
+<head>
+	<meta charset="utf-8">
+	<title>New York Times Search</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">	
+</head>
+<body>
+
+<div class="container">
+	
+	<div class="jumbotron">
+		<h1 class="text-center"><strong>New York Times Search</strong></h1>
+	</div>
+
+	<div class="row">
+		<div class='col-sm-12'>
+		<br>
+
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong> Search Parameters</strong></h3>
+				</div>
+				<div class="panel-body">
+					
+					<form role='form'>
+						
+						<div class="form-group">
+							<label for='search'>Search Term:</label>
+							<input type="text" class="form-control" id="searchTerm">
+						</div>
+
+						<div class="form-group">
+							<label for="pwd">Number of Records to Retrieve:</label>
+							<select class="form-control" id="numRecordsSelect">
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="startYear">Start Year:</label>
+							<input type="text" class="form-control" id="startYear">
+						</div>
+
+						<div class="form-group">
+							<label for="endYear">End Year:</label>
+							<input type="text" class="form-control" id="endYear">
+						</div>
+
+						<button type="submit" class="btn btn-default" id="runSearch">Search</button>
+						<button type="button" class="btn btn-default" id="clearAll">Clear Results</button>
+
+					</form>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+		<br>
+
+
+			<div class="panel panel-primary">
+				
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Top Articles</strong></h3>
+				</div>
+
+				<div class="panel-body" id="wellSection">
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+		</div>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="NYTCode.js"></script>	
+</body>
+</html>
